@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Toothpick sequence </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="toothpick.js"></script>
+    <script src="main.js"></script>
+    <style>
+        #canvasArea {
+            text-align: center;
+        }
+
+        #radioButtons {
+            text-align: center;
+        }
+
+        #numOfPicks {
+            float: left;
+            width: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="numOfPicks">
+        <h4 id="pickCounter">Toothpicks:</h4>
+    </div>
+    <div id="canvasArea"></div>
+    <div id="radioButtons">
+        <h3>Toothpick Length</h3>
+        <input type="radio" id="small" onclick="changeLength(4)"> small;
+        <input type="radio" id="medium" onclick="changeLength(12)"> medium;
+        <input type="radio" id="large" onclick="changeLength(32)" checked="true"> large;
+    </div>
+</body>
+
+</html>

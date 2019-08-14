@@ -1,0 +1,50 @@
+<!--/**
+ * Mihael Petričević
+ * - Započeo: 14.3.2019.
+ * - Završio: 15.3.2019.
+ */-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> TicTacToe </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="main.js" type="text/Javascript"></script>
+    </head>
+    <body>
+        
+        <h1 id="header"> Tic Tac Toe </h1>
+        <hr><br>
+
+        <div>
+        <table id="board">
+            <tr>
+                <td id="grid0" onclick="gridClick('0')"> 0 </td>
+                <td id="grid1" onclick="gridClick('1')"> 1 </td>
+                <td id="grid2" onclick="gridClick('2')"> 2 </td>
+            </tr>
+            <tr>
+                <td id="grid3" onclick="gridClick('3')"> 3 </td>
+                <td id="grid4" onclick="gridClick('4')"> 4 </td>
+                <td id="grid5" onclick="gridClick('5')"> 5 </td>
+            </tr>
+            <tr>
+                <td id="grid6" onclick="gridClick('6')"> 6 </td>
+                <td id="grid7" onclick="gridClick('7')"> 7 </td>
+                <td id="grid8" onclick="gridClick('8')"> 8 </td>
+            </tr>
+        </table>
+        </div>
+
+        <br><br><br>
+
+        <div id="inputField">
+            <input id="textboxInput" type="number" value="4">
+            <input type="submit" onclick="myFunction()" value="SUBMIT"> 
+
+            <br><br><br>
+            <input id="resetBtn" type="button" onclick="reset()" value="Reset">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+/**
+ * Mihael Petričević
+ * - Započeo: 14.3.2019.
+ * - Završio: 15.3.2019.
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    text-align: center;
+}
+
+#board {
+    /* Align table to center */
+    margin: auto;
+    font-size: 50px;
+}
+
+td {
+    /* Setup Cell size and position */
+    padding: 10px 20px;
+    float: left;
+
+    cursor: pointer;
+}
+
+#grid0, #grid1, #grid2 {
+    border-bottom: solid black;
+}
+
+#grid3, #grid4, #grid5 {
+    border-bottom: solid black;
+}
+
+#grid1, #grid4, #grid7 {
+    border-left: solid black;
+    border-right: solid black;
+}
+
+#inputField {
+    /* Centrira DIV element */
+    text-align: center;
+}
+
+#textboxInput {
+    width: fit-content;
+    text-align: center;
+}
+
+#resetBtn {
+    visibility: hidden;
+}

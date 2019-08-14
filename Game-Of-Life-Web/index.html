@@ -1,0 +1,30 @@
+<!-- Mihael Petričević
+    17.3.2019.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Game of Life</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="main.js"></script>
+        <style>
+            body {
+                margin-top: 100px;
+                text-align: center;
+            }
+
+            #input {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="CanvasArea"></div>
+        <h3>Size</h3>
+        <input type="radio" id="small" onclick="changeSize(1)">Small
+        <input type="radio" id="normal" onclick="changeSize(4)"> Normal
+        <input type="radio" id="big" onclick="changeSize(8)"> Big
+    </body>
+</html>
