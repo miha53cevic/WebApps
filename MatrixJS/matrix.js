@@ -31,7 +31,8 @@ class Matrix {
             // Draw Streamers
             for (let i = 0; i < streamer.text.length; i++) {
 
-                let charIndex = Math.abs(parseInt((((i * this.fontSize) - streamer.height) % streamer.text.length).toString()));
+                //let charIndex = Math.abs(parseInt((((i * this.fontSize) - streamer.height) % streamer.text.length).toString()));
+                let charIndex = i;
 
                 if (i == 0) {
                     drawFillText(streamer.text[charIndex], streamer.column * this.fontSize, streamer.height - (i * this.fontSize), this.fontSize, 'white');

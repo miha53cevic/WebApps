@@ -2,17 +2,34 @@ let matrix;
 
 window.onload = function () {
     createCanvas(window.innerWidth, window.innerHeight);
-    clear('black');
 
-    matrix = new Matrix(150, 10);
+    matrix = new Matrix(100, 10);
 
-    // Update at 60FPS ---> 1 / 60;
-    setInterval(loop, 16.6);
+    // Get first frame time
+    time1 = Date.now()
+
+    // Change canvas size with window
+    window.onresize = function() {
+        const canvas = document.getElementById('canvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        WIDTH = canvas.width;
+        HEIGHT = canvas.height;
+    }
+
+    window.requestAnimationFrame(loop);
 }
 
+let time1, time2;
 function loop() {
     clear('black');
 
-    // 0.0166 is the update in seconds or DeltaTime, time between each frame
-    matrix.run(0.0166);
+    time2 = Date.now();
+    const deltaTime = time2 - time1;
+    time1 = time2;
+
+    // delta time is in seconds
+    matrix.run(deltaTime / 1000);
+    window.requestAnimationFrame(loop);
 }
